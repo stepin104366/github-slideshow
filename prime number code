@@ -1,0 +1,21 @@
+
+#include <stdio.h> 
+int main() 
+{ 
+    int n, i, flag = 1; 
+    printf("Enter a number: \n"); //user input
+    scanf("%d", &n);             //store the input number
+ for (i = 2; i <= sqrt(n); i++) { 
+        if (n % i == 0) {        //to check if input number is divisible by 2
+            flag = 0; 
+            break;
+        } 
+    } 
+     if (flag == 1) {           //checks the condition and prints the given result
+        printf("True"); 
+    } 
+    else { 
+        printf("False"); 
+    } 
+    return 0; 
+} 
